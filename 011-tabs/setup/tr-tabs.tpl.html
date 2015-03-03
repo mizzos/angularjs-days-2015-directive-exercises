@@ -1,0 +1,10 @@
+<div class="tr-tabs">
+  <ul class="tr-tabs__header">
+    <li ng-repeat="tab in tabs" 
+        ng-class="{disabled:!tab.selected}"
+        class="waves-effect waves-light btn">
+      <a href="" ng-click="select(tab)">{{tab.title}}</a>
+    </li>
+  </ul>
+  <div class="tr-tab__content" ng-transclude></div>
+</div>
