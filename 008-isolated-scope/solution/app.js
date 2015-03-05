@@ -1,5 +1,14 @@
 var app = angular.module('app', []);
 
+app.directive('trAddress', function () {
+    return {
+        templateUrl: 'tr-address.tpl.html',
+        scope: {
+            address: '='
+        }
+    };
+});
+
 app.controller('AppController', function ($scope) {
     $scope.hamburg = {
         street: 'Am Stint 17',
@@ -7,7 +16,7 @@ app.controller('AppController', function ($scope) {
     };
 
     $scope.berlin = {
-        street: 'Am Kudamm 123',
+        street: 'Am Kuhdamm 123',
         city: 'Berlin'
     };
 });

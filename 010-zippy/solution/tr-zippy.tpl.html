@@ -1,0 +1,9 @@
+<div class="tr-zippy">
+  <div class="tr-zippy__title-bar" ng-click="visible = !visible">
+    <span class="tr-zippy__icon">
+        {{ visible ? '&blacktriangledown;' : '&blacktriangleright;' }}
+    </span>
+    <span class="tr-zippy__title">{{ title }}</span>
+  </div>
+  <div class="tr-zippy__content" ng-show="visible" ng-transclude></div>
+</div>
